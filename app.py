@@ -39,15 +39,14 @@ for intent in data['intents']:
 train_labels = to_categorical(output, num_classes=len(labels))
 
 import nltk
-nltk.download('stopwords')
 
 from nltk.tokenize import RegexpTokenizer
 from nltk.tokenize.treebank import TreebankWordDetokenizer
-from nltk.corpus import stopwords
 from keras.preprocessing.text import Tokenizer
 import re
 
-stop_words = stopwords.words('spanish')
+with open('./data/stopwords_spanish.txt', 'r') as file:
+    stop_words = file.read().splitlines()
 
 # Para cada enunciado quitamos las StopWords
 # También quitamos los acentos y filtramos signos de puntuación
@@ -72,6 +71,7 @@ for sen in texts:
     result = tokenizer.tokenize(sentence)
     # Agregar al arreglo los textos "destokenizados" (Como texto nuevamente)
     X.append(TreebankWordDetokenizer().detokenize(result))
+
 
 # Importamos la librería para generar la matriz de entrada de textos
 # (Importamos pad_sequences y texts_to_sequences para proceso de padding)
