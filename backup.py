@@ -38,15 +38,49 @@ for intent in data['intents']:
 # Generamos la matriz de salidas
 train_labels = to_categorical(output, num_classes=len(labels))
 
-# %%
+import nltk
+nltk.download('stopwords')
+
+from nltk.tokenize import RegexpTokenizer
+from nltk.tokenize.treebank import TreebankWordDetokenizer
+from nltk.corpus import stopwords
 from keras.preprocessing.text import Tokenizer
 import re
 
+stop_words = stopwords.words('spanish')
 
-with open('./data./arreglo_X.json', 'r', encoding='utf-8') as file:
-    X = json.load(file)
+with open('./data/stopwords_spanish.txt', 'w') as file:
+    file.write('\n'.join(stop_words))
 
-# %%
+    
+
+# Para cada enunciado quitamos las StopWords
+# También quitamos los acentos y filtramos signos de puntuación
+X = []
+for sen in texts:
+    sentence = sen
+    # Filtrado de stopword
+    for stopword in stop_words:
+        sentence = sentence.replace(" " + stopword + " ", " ")
+    sentence = sentence.replace("á", "a")
+    sentence = sentence.replace("é", "e")
+    sentence = sentence.replace("í", "i")
+    sentence = sentence.replace("ó", "o")
+    sentence = sentence.replace("ú", "u")
+    # Remover espacios múltiples
+    sentence = re.sub(r'\s+', ' ', sentence)
+    # Convertir todo a minúsculas
+    sentence = sentence.lower()
+    # Filtrado de signos de puntuación
+    tokenizer = RegexpTokenizer(r'\w+')
+    # Tokenización del resultado
+    result = tokenizer.tokenize(sentence)
+    # Agregar al arreglo los textos "destokenizados" (Como texto nuevamente)
+    X.append(TreebankWordDetokenizer().detokenize(result))
+
+
+
+
 # Importamos la librería para generar la matriz de entrada de textos
 # (Importamos pad_sequences y texts_to_sequences para proceso de padding)
 from keras.preprocessing.sequence import pad_sequences
@@ -65,7 +99,6 @@ print(X_train)
 with open('word_index.json', 'w', encoding='utf-8') as f:
     json.dump(tokenizer.word_index, f, ensure_ascii=False, indent=4)
 
-# %%
 from tensorflow.keras.models import load_model
 
 # Cargar el modelo desde el archivo
@@ -89,7 +122,6 @@ def Instancer(inp):
     padded = pad_sequences(seq, maxlen=maxlen_user)
     return padded
 
-# %%
 # Módulo de detección de gramáticas débiles
 Saludos_In = ["Hola", "Holi", "Cómo estás", "Que tal", "Cómo te va"]
 Despedidas_In = ["Adios", "Bye", "Hasta luego", "Nos vemos", "Hasta pronto"]
@@ -114,7 +146,6 @@ def Weak_grammars(inp):
         index += 1
     return weak_act, response
 
-# %%
 # Módulo de detección de gramáticas fuertes
 Insultos_In = ["Perra", "Puta", "Estúpida", "Maldita lisiada"]
 Fan_In = ["Harry Potter", "Juego de tronos", "El señor de los anillos"]
@@ -136,7 +167,6 @@ def Strong_grammars(inp):
         index += 1
     return strong_act
 
-# %%
 # Módulo de reconocimiento de entidad País
 Paises = {'Parrilla Fire': 'Parrilla Fire', 'Parrilla Af500': 'Parrilla Af500', 'Home Pro': 'Home Pro', 'China re200': 'China re200', 'China 550': 'China 550', 'China Steel': 'China Steel'}
 Resp_Paises = ['no cuenta con descuentos disponibles, pero ofrecemos precios competitivos en el mercado.']
@@ -152,7 +182,6 @@ def Country(inp):
     if pais_act == 0:
         return ('\n' + random.choice(Paises_Unknown) + '\n')
 
-# %%
 # Módulo de reconocimiento de entidad Número
 import re
 import math
@@ -185,7 +214,6 @@ def identificar_producto(input_usuario):
             return producto
     return None
 
-# %%
 def clasificar_intent(mensaje):
     # Palabras clave para identificar una intención de pregunta sobre precio
     palabras_clave_precio = ['precio', 'costo', 'cuánto cuesta', 'tarifa', 'valor']
@@ -196,7 +224,6 @@ def clasificar_intent(mensaje):
     # Si no se encontró ninguna palabra clave de precio, asumir una intención general
     return 'general'
 
-# %%
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 app = Flask(__name__)
