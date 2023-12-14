@@ -1,13 +1,13 @@
 {
     "version": 2,
-    "builds": [{ "src": "app.ipynb", "use": "@vercel/python" }],
+    "builds": [{"src": "app-py", "use": "@vercel/python"}],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "app.ipynb"
-      }
+        {
+            "src": "/(.*)",
+            "dest": "app.py"
+        }
     ],
     "env": {
-      "FLASK_ENV": "production"
+        "FLASK_ENV": "production"
     }
-  }
+}

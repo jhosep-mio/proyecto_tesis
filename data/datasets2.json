@@ -1,0 +1,368 @@
+{
+    "intents": [
+      {
+        "tag": "Productos_Existentes",
+        "patterns": [
+          "¿Qué productos tienen disponibles?",
+          "¿Pueden mostrarme los modelos que ofrecen?",
+          "Estoy interesado en sus productos, ¿qué tienen?",
+          "Quisiera ver su catálogo de productos"
+        ],
+        "responses": [
+          "Bacon Grill ofrece a sus clientes una calidad de productos excelente en parrillas y caja chinas, lo puedes ver aquí <Link to='/categorias'>Categorias</Link>",
+          "Bacon Grill ofrece dos categorias distintas, las cuales son parrillas y caja chinas, lo puedes ver aquí <Link to='/categorias'> Categorias</Link>"
+        ]
+      },
+      {
+        "tag": "Tipos_Parrilla",
+        "patterns": [
+          "Estoy pensando en comprar una parrilla, ¿cuáles tienen?",
+          "Me gustaría saber más sobre las parrillas que ofrecen",
+          "¿Qué tipos de parrillas tienen en stock?",
+          "Que parrillas tienen",
+          "Muéstrenme las parrillas que venden"
+        ],
+        "responses": [
+          "Excelente elección, nuestras parrillas son de buena calidad, así mismo con diversidad en tipos y modelos, haga click en el siguiente enlace <Link to='/productos/3-parrillas'> Parrillas </Link>",
+          "Contamos con dos tipos de parrillas a gas y a carbón, cada una tiene su característica que la hacen la mejor opción, haga click en el siguiente enlace <Link to='/productos/3-parrillas'> Parrillas </Link>"
+        ]
+      },
+      {
+        "tag": "Tipos_Caja_China",
+        "patterns": [
+          "¿Qué modelos de Caja China tienen?",
+          "Estoy buscando una Caja China, ¿cuáles me recomiendan?",
+          "Quiero ver los diferentes tipos de Caja China que ofrecen"
+        ],
+        "responses": [
+          "En bacon Grill puedes encontrar las Caja China re200, Caja China Steel, Caja China 550",
+          "Bacon Grill te ofrece los siguientes modelos de Caja China: re200, Caja China Steel, Caja China 550",
+          "En cuanto a nuestros modelos de Caja China, cada uno posee características únicas que se adaptan a diferentes necesidades y preferencias. Sin embargo, si buscas la mejor opción, te recomendamos nuestra Caja China Steel, destacada por su excepcional calidad y rendimiento superior."
+        ]
+      },
+      {
+        "tag": "Funcionalidad_AF500",
+        "patterns": [
+          "Estoy interesado en el modelo Af500",
+          "Quisiera saber mas del modelo Af500"
+        ],
+        "responses": [
+          "Este modelo ofrece una buena distribución y contención uniforme de calor, la cual garantiza en la cocina tener buenos resultados mediante sabores, para más detalles da click en el siguiente enlace <Link to='/producto/1-parrilla-af500'> AF500 </Link> ",
+          "Este modelo es perfecto para la variedad de cocción, para la cual es adaptable para sus necesidades de ahumar referentes a las parrillas, para más detalles da click en el siguiente enlace <Link to='/producto/1-parrilla-af500'> AF500 </Link>",
+          "Este modelo brinda un tamaño ideal, para que el espacio sea el ideal en la obtención de cocción en los alimentos, esto se refleja en los sabores obtenidos, para más detalles da click en el siguiente enlace <Link to='/producto/1-parrilla-af500'> AF500 </Link>"
+        ]
+      },
+      {
+        "tag": "Tamaño_y_Diseño_AF500",
+        "patterns": [
+          "¿Cuáles son los tamaños disponibles para el modelo Af500?",
+          "¿Qué diseños están disponibles para el modelo Af500?",
+          "¿Qué tamaños y diseños hay disponibles para el modelo Af500?"
+        ],
+        "responses": [
+          "La Parrilla Af500 está disponible en dos tamaños diferentes: estándar y grande.",
+          "En cuanto a diseño, la Parrilla Af500 se ofrece en dos opciones: blanco y gris.",
+          "La Parrilla Af500 viene en dos tamaños: estándar y grande, y puedes elegirla en dos diseños diferentes: blanco y gris."
+        ]
+      },
+      {
+        "tag": "Precio_AF500",
+        "patterns": [
+          "¿Qué precio tiene la parrilla Af500 con tamaño estándar y diseño negro?",
+          "¿Qué precio tiene la parrilla Af500 con tamaño estándar y diseño gris?",
+          "¿Qué precio tiene la parrilla Af500 con tamaño grande y diseño negro?",
+          "¿Qué precio tiene la parrilla Af500 con tamaño grande y diseño gris?",
+          "Quisiera saber sobre los precios de la Parrilla Af500"
+        ],
+        "responses": [
+          "La Parrilla Af500 con tamaño estándar y diseño negro tiene un precio de S/. 800.00.",
+          "La Parrilla Af500 con tamaño estándar y diseño gris tiene un precio de S/. 800.00.",
+          "La Parrilla Af500 con tamaño grande y diseño negro tiene un precio de S/. 1.400.00.",
+          "La Parrilla Af500 con tamaño grande y diseño gris tiene un precio de S/. 1.400.00.",
+          "El precio de la Parrilla Af500 varía según el tamaño y diseño. El modelo estándar tiene un costo de S/. 800.00 y el modelo grande tiene un precio de S/. 1.400.00."
+        ]
+      },
+      {
+        "tag": "Funcionalidad_Fire",
+        "patterns": [
+          "Estoy interesado en el modelo Parilla Fire que es lo que me ofrece en cuanto a su funcionalidad",
+          "Quisiera saber mas del modelo Parilla Fire sobre su función en la cocina"
+        ],
+        "responses": [
+          "Este modelo ofrece una buena distribución y contención uniforme de calor, la cual garantiza en la cocina tener buenos resultados mediante sabores, para más detalles da click en el siguiente enlace <Link to='/producto/1-parrilla-af500'> AF500 </Link>",
+          "Este modelo es perfecto para la variedad de cocción, para la cual es adaptable para sus necesidades de ahumar referentes a las parrillas, para más detalles da click en el siguiente enlace <Link to='/producto/1-parrilla-af500'> AF500 </Link>",
+          "Este modelo brinda un tamaño ideal, para que el espacio sea el ideal en la obtención de cocción en los alimentos, esto se refleja en los sabores obtenidos, para más detalles da click en el siguiente enlace <Link to='/producto/1-parrilla-af500'> AF500 </Link>"
+        ]
+      },
+      {
+        "tag": "Tamaño_y_Diseño_Fire",
+        "patterns": [
+          "Cada vez estoy más convencido, pero que tamaños hay para este modelo Parilla Fire",
+          "Cada vez estoy más convencido, pero que diseño hay para este modelo Parilla Fire",
+          "Estoy convenciéndome más, pero que tamaño y diseño hay disponibles para Parilla Fire"
+        ],
+        "responses": [
+          "La Parrilla Fire tiene disponible dos tamaños: estándar y grande",
+          "La Parilla Fire tiene disponible dos diseños: blanco y gris",
+          "La Parilla Fire tiene disponible dos tamaños: estándar y grande, así mismo dos diseños: blanco y gris"
+        ]
+      },
+      {
+        "tag": "Precio_Fire",
+        "patterns": [
+          "¿Qué precio tiene la parrilla con tamaño estandar y diseño negro?",
+          "¿Qué precio tiene la parrilla con tamaño estándar y diseño gris?",
+          "¿Qué precio tiene la parrilla con tamaño grande y diseño negro?",
+          "¿Qué precio tiene la parrilla con tamaño grande y diseño gris?",
+          "Quisiera saber sobre los precios de la Parilla Fire"
+        ],
+        "responses": [
+          "La Parilla Fire con tamaño estándar y diseño negro tiene el precio de S/. 850.00",
+          "La Parilla Fire con tamaño estándar y diseño gris tiene el precio de S/. 850.00",
+          "La Parilla Fire con tamaño grande y diseño negro tiene el precio de S/. 1.450.00",
+          "La Parilla Fire con tamaño grande y diseño gris tiene el precio de S/. 1.450.00",
+          "La Parilla Fire su precio varía referente al tamaño, en el caso del tamaño estándar tiene un precio de S/. 850.00 y las de tamaño grande S/. 1.450.00"
+        ]
+      },
+      {
+        "tag": "Descuentos",
+        "patterns": [
+          "¿Qué descuentos hay disponibles?",
+          "¿Sabes qué descuentos están actualmente activos?",
+          "¿Hay descuentas para las parrilas y cajas chinas?",
+          "Cuales son sus descuentos",
+          "Háblame de los descuentos disponibles",
+          "Informarme sobre los descuentos actuales"
+        ],
+        "responses": [
+          "Actualmente..."
+        ]
+      },
+      {
+        "tag": "Delivery",
+        "patterns": [
+          "¿Cuentan con delivery?",
+          "¿Ofrecen servicio de entrega a domicilio para los productos?",
+          "¿Cómo gestionan la entrega de los productos?",
+          "¿Cómo se manejará la entrega de mi producto"
+        ],
+        "responses": [
+          "Por el momento el método de Delivery aún no está disponible para las entregas de nuestros producto, por lo cual para su entrega se tiene que acercar a nuestra tienda presencial <Link to='/contacto'>Ubicación</Link>"
+        ]
+      },
+      {
+        "tag": "Entrega_de_producto",
+        "patterns": [
+          "¿Cuando prodria recoger mi producto?",
+          "¿Como me entregan mi producto?"
+        ],
+        "responses": [
+          "La entrega de nuestros productos se realiza dentro de los dos días siguientes a la realización de la compra en nuestra tienda fisica Yerbateros 399"
+        ]
+      },
+      {
+        "tag": "Funcionalidad_Home_Pro",
+        "patterns": [
+          "¿Qué características tiene el modelo Home Pro?",
+          "¿Por qué debería elegir el modelo Home Pro?"
+        ],
+        "responses": [
+          "El modelo Home Pro es conocido por su eficiente distribución y retención de calor, permitiéndote lograr resultados culinarios de alta calidad. Para más detalles, puedes entrar al siguiente enlace: <Link to='/producto/9-parrilla-home-pro'>Home Pro</Link>",
+          "Si buscas versatilidad en tu cocina, el modelo Home Pro es ideal, adaptándose fácilmente a diferentes técnicas de cocción como asar y ahumar. Encuentra más información <Link to='/producto/9-parrilla-home-pro'>Home Pro</Link>"
+        ]
+      },
+      {
+        "tag": "Tamaño_y_Diseño_Home_Pro",
+        "patterns": [
+          "¿En qué tamaños y diseños viene el modelo Home Pro?",
+          "¿Cuáles son las opciones de personalización disponibles para el modelo Home Pro?"
+        ],
+        "responses": [
+          "El modelo Home Pro está disponible en dos tamaños, estándar y grande, y ofrece dos opciones de color: blanco y gris, permitiéndote elegir según tus preferencias y necesidades."
+        ]
+      },
+      {
+        "tag": "Precio_Home_Pro",
+        "patterns": [
+          "¿Cuánto cuesta el modelo Home Pro en diferentes tamaños y diseños?",
+          "¿Cuál es el rango de precios para el modelo Home Pro?"
+        ],
+        "responses": [
+          "El precio del modelo Home Pro varía. Para un diseño estándar, ya sea negro o gris, el precio es de S/. 1.200.00. Si prefieres el modelo más grande, el costo sería de S/. 2.000.00."
+        ]
+      },
+      {
+        "tag": "Funcionalidad_re200",
+        "patterns": [
+          "¿Qué funciones tiene la Caja China re200?",
+          "¿Qué puedo cocinar con la Caja China re200?",
+          "¿Cómo funciona la Caja China re200?"
+        ],
+        "responses": [
+          "La Caja China re200 destaca por su eficiente distribución y retención de calor, permitiéndote obtener resultados consistentes y deliciosos. Encuentra más información en <Link to='/producto/10-china-re200'>China re200</Link>.",
+          "Esta caja china es muy versátil; puedes usarla para asar, ahumar y diversas formas de cocción, adaptándose a tus necesidades y preferencias culinarias. Más detalles disponibles en <Link to='/producto/10-china-re200'>China re200</Link>.",
+          "La Caja China re200 está diseñada para una cocción uniforme y eficaz, maximizando los sabores en tus preparaciones. Puedes obtener más información en <Link to='/producto/10-china-re200'>China re200</Link>."
+        ]
+      },
+      {
+        "tag": "Tamaño_y_Diseño_re200",
+        "patterns": [
+          "¿Qué tamaños y diseños están disponibles para la Caja China re200?",
+          "¿Cómo es el diseño de la Caja China re200?",
+          "¿Es adecuada la Caja China re200 para espacios reducidos?"
+        ],
+        "responses": [
+          "La Caja China re200 viene en varios tamaños y diseños, permitiendo encontrar la opción perfecta para tu espacio y necesidades. Descubre más opciones en <Link to='/producto/10-china-re200'>China re200</Link>.",
+          "Su diseño está pensado para optimizar la cocción y facilitar su uso, combinando funcionalidad con una estética atractiva. Conoce más sobre su diseño en <Link to='/producto/10-china-re200'>China re200</Link>.",
+          "Gracias a sus diferentes tamaños, la Caja China re200 se adapta bien a diversos espacios, asegurando que puedas cocinar cómodamente. Encuentra más detalles en <Link to='/producto/10-china-re200'>China re200</Link>."
+        ]
+      },
+      {
+        "tag": "Precio_re200",
+        "patterns": [
+          "¿Cuánto cuesta la Caja China re200?",
+          "¿Qué varía en el precio de la Caja China re200?",
+          "¿Tienen diferentes precios según el tamaño y diseño de la Caja China re200?",
+          "¿Puede darme más detalles sobre los precios de los diferentes modelos de la Caja China re200?"
+        ],
+        "responses": [
+          "Los precios de la Caja China re200 varían según el tamaño y diseño. Puedes encontrar detalles específicos de cada modelo y sus precios en <Link to='/producto/10-china-re200'>China re200</Link>",
+          "La Caja China re200 de tamaño estándar y diseño negro o gris está valorada en S/. 300.00, mientras que la de tamaño grande en diseño gris tiene un precio de S/. 500.00. Explora más en <Link to='/producto/10-china-re200'>China re200</Link>",
+          "El precio de la Caja China re200 dependerá de las especificaciones de diseño y tamaño que elijas, asegurando que encuentres una opción que se adapte a tu presupuesto. Más detalles en <Link to='/producto/10-china-re200'>China re200</Link>"
+        ]
+      },
+      {
+        "tag": "Funcionalidad_China550",
+        "patterns": [
+          "¿Qué características tiene la Caja China 550?",
+          "¿Qué diferencia a la Caja China 550 de otros modelos?",
+          "¿Qué puedo cocinar en la Caja China 550?"
+        ],
+        "responses": [
+          "La Caja China 550 ofrece una excelente distribución y retención de calor, garantizando excelentes resultados culinarios. Para más detalles, visita <Link to='/producto/11-caja-china-550'>China 550</Link>.",
+          "Este modelo es versátil, permitiéndote asar y ahumar una variedad de alimentos con facilidad. Encuentra más información en <Link to='/producto/11-caja-china-550'>China 550</Link>.",
+          "La Caja China 550 es ideal para optimizar espacio, garantizando una cocción uniforme. Más detalles en <Link to='/producto/11-caja-china-550'>China 550</Link>."
+        ]
+      },
+      {
+        "tag": "Tamaño_y_Diseño_China550",
+        "patterns": [
+          "¿Qué tamaños y diseños están disponibles para la Caja China 550?",
+          "¿Cuáles son las opciones de personalización para la Caja China 550?",
+          "¿Puedo elegir diferentes tamaños y colores en la Caja China 550?"
+        ],
+        "responses": [
+          "La Caja China 550 está disponible en tamaños estándar y grande, y en colores blanco y gris.",
+          "Tienes la opción de elegir entre diferentes tamaños y diseños para encontrar la Caja China 550 que mejor se adapte a tus necesidades.",
+          "Sí, la Caja China 550 ofrece diversas opciones en cuanto a tamaño y diseño, permitiéndote seleccionar la que mejor se ajuste a tus preferencias."
+        ]
+      },
+      {
+        "tag": "Precios_China_550",
+        "patterns": [
+          "¿Cuánto cuesta la Caja China 550?",
+          "¿Qué factores influyen en el precio de la Caja China 550?",
+          "¿Hay diferentes precios según las características de la Caja China 550?"
+        ],
+        "responses": [
+          "Los precios de la Caja China 550 varían, por ejemplo, una versión estándar cuesta S/. 400.00, mientras que una de tamaño grande está valorada en S/. 600.00. Más detalles en <Link to='/producto/11-caja-china-550'>China 550</Link>.",
+          "El precio de la Caja China 550 depende de las especificaciones como tamaño y diseño. Puedes revisar los precios específicos en <Link to='/producto/11-caja-china-550'>China 550</Link>.",
+          "Sí, las características y personalizaciones de la Caja China 550 afectan su precio final. Encuentra más información en <Link to='/producto/11-caja-china-550'>China 550</Link>."
+        ]
+      },
+      {
+        "tag": "Funcionalidad_China_Steel",
+        "patterns": [
+          "¿Qué características destacan en la Caja China Steel?",
+          "¿Cómo es la performance de la Caja China Steel al cocinar?",
+          "¿Qué funcionalidades ofrece la Caja China Steel en la cocina?"
+        ],
+        "responses": [
+          "La Caja China Steel garantiza una óptima distribución y retención de calor, asegurando comidas deliciosamente cocidas. Encuentra más detalles en <Link to='/producto/12-caja-china-steel'>China Steel</Link>.",
+          "Este modelo es perfecto para diversas técnicas de cocción, incluyendo asado y ahumado, adaptándose perfectamente a tus necesidades. Más información disponible en <Link to='/producto/12-caja-china-steel'>China Steel</Link>",
+          "La Caja China Steel está diseñada para maximizar el espacio y facilitar una cocción uniforme y eficiente. Más detalles en <Link to='/producto/12-caja-china-steel'>China Steel</Link>"
+        ]
+      },
+      {
+        "tag": "Tamaño_y_Diseño_China_Steel",
+        "patterns": [
+          "¿Qué opciones de tamaño y diseño ofrece la Caja China Steel?",
+          "¿Puedo elegir diferentes diseños y tamaños en la Caja China Steel?",
+          "¿Qué personalizaciones están disponibles para la Caja China Steel?"
+        ],
+        "responses": [
+          "La Caja China Steel está disponible en tamaños estándar y grande, y en diseños blanco y gris.",
+          "Puedes seleccionar la Caja China Steel en diferentes tamaños y diseños, según tus preferencias y necesidades.",
+          "Tienes varias opciones de personalización con la Caja China Steel, eligiendo entre diferentes tamaños y diseños."
+        ]
+      },
+      {
+        "tag": "Precio_China_Steel",
+        "patterns": [
+          "¿Cuánto cuesta la Caja China Steel?",
+          "¿Hay diferentes precios para diferentes tamaños y diseños de la Caja China Steel?",
+          "¿Puedes proporcionar una lista de precios para los diferentes modelos de Caja China Steel?"
+        ],
+        "responses": [
+          "El precio de la Caja China Steel varía: el modelo estándar cuesta S/. 600.00 y el modelo grande S/. 800.00. Más detalles en <Link to='/producto/12-caja-china-steel'>China Steel</Link>.",
+          "Sí, el precio de la Caja China Steel depende del tamaño y diseño que elijas. Puedes encontrar más información en <Link to='/producto/12-caja-china-steel'>China Steel</Link>.",
+          "Para una lista completa de precios y modelos de la Caja China Steel, por favor visita en <Link to='/producto/12-caja-china-steel'>China Steel</Link>."
+        ]
+      },
+      {
+        "tag": "Pago_Compra",
+        "patterns": [
+          "¿Qué métodos de pago aceptan?",
+          "¿Cómo puedo pagar mi compra?",
+          "¿Tienen opciones de pago en línea?"
+        ],
+        "responses": [
+          "Ofrecemos diversas opciones de pago para facilitar tu compra, incluyendo pagos electrónicos y transferencias bancarias. Puedes encontrar más detalles y elegir tu método de pago preferido durante el proceso de checkout en nuestro sitio web.",
+          "Contamos con varios métodos de pago para adaptarnos a tus necesidades, incluyendo pagos en línea. Dirígete a nuestra página de checkout para ver todas las opciones disponibles y completar tu compra.",
+          "En nuestra plataforma, aceptamos varios métodos de pago para hacer tu experiencia de compra más conveniente. Puedes realizar tu pago de manera segura durante el proceso de finalización de compra en nuestro sitio web."
+        ]
+      },
+      {
+        "tag": "Navegación_Compra",
+        "patterns": [
+          "¿Cómo selecciono un producto para comprar?",
+          "¿Dónde puedo revisar los productos que he seleccionado?",
+          "¿Dónde encuentro más información sobre un producto específico?",
+          "¿Cómo finalizo y pago mi compra?"
+        ],
+        "responses": [
+          "Para seleccionar un producto, simplemente navega por nuestro catálogo, y cuando encuentres el producto que deseas, haz clic en 'Agregar al Carrito'.",
+          "Puedes revisar y modificar los productos que has seleccionado visitando tu 'Carrito de Compras', accesible en cualquier momento mientras navegas por nuestro sitio.",
+          "Para obtener más detalles sobre un producto, haz clic en el nombre o imagen del producto. Serás llevado a una página con una descripción detallada y especificaciones.",
+          "Una vez que hayas seleccionado todos los productos que deseas comprar, ve al 'Carrito de Compras' y sigue las instrucciones para completar tu compra y realizar el pago."
+        ]
+      },
+      {
+        "tag": "Despedida",
+        "patterns": [
+          "Gracias por su atención",
+          "Gracias por su guía",
+          "Gracias por su asesoramiento",
+          "Gracias por su apoyo"
+        ],
+        "responses": [
+          "¡Gracias a usted! Estaremos a la espera de su próxima compra.",
+          "Le agradecemos por su guía. Siempre estamos aquí para ayudar.",
+          "Gracias por contar con nuestro asesoramiento. Estamos a su servicio.",
+          "Apreciamos su apoyo. ¡Gracias por su compra!"
+        ]
+      },
+      {
+        "tag": "Guia_compra",
+        "patterns": [
+          "Me puedes guiar en mi compra",
+          "Como agregar un producto al carrito",
+          "guia para realizar mi compra",
+          "Guia que me ayude en mi compra"
+        ],
+        "responses": [
+          "habilitarbotondeguia"
+        ]
+      }
+    ]
+}
