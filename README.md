@@ -1,2 +1,2 @@
-# proyecto_tesis
+# python_tesis
 proyecto
